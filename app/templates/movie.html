@@ -32,22 +32,5 @@
 
 
     <h1 class="display-4">Оставить отзыв</h1>
-    <form method="POST" action="" novalidate>
-        <input id="csrf_token" name="csrf_token" type="hidden" value="IjJjZTg1ZmFhNmEyYjkyMTIxNTUyZDZkNjcwNWU2MGNiZDFiMGZiNWEi.ZD6ihQ.7UGiUuCF2DC37aOTfH_wHP3PdHM">
-        <div class="mb-3">
-            <label for="name">Ваше имя</label>
-            <input class="form-control" id="name" name="name" required type="text" value="">
-        </div>
-        <div class="mb-3">
-            <label for="text">Текст отзыва</label>
-            <textarea class="form-control" id="text" name="text" required rows="5"></textarea>
-        </div>
-        <div class="mb-3">
-            <label for="score">Оценка</label>
-            <select class="form-control" id="score" name="score"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option selected value="10">10</option></select>
-        </div>
-        <div class="mb-3">
-            <input class="btn btn-lg btn-outline-secondary" id="submit" name="submit" type="submit" value="Добавить отзыв">
-        </div>
-    </form>
+    {% include "add_review.html" %}
 {% endblock %}
